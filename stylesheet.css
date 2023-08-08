@@ -1,0 +1,37 @@
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.picture {
+    flex: 1; /* Fill available width */
+    display: flex;
+    align-items: stretch; /* Stretch to container height */
+}
+
+.picture img {
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+    min-width: 100%; /* Ensure image takes up full width of .picture */
+    height: 100%; /* Ensure image takes up full height of .picture */
+}
+
+
+.from {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    border: 5px dotted red;
+    flex-grow: 1;
+}
