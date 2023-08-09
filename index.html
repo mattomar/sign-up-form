@@ -16,62 +16,65 @@
             <img src="medit.jpg" alt="picture of green leafs">
         </div>
         <div class="right"> 
-        <div class="header">🔓 Sign Up Now and Unlock New Horizons 🌅<br>
-
-            Experience a world of possibilities and growth as you take the first step towards your awakening
-            journey.<br>
-            Join us today to access exclusive content, expert guidance, and transformative experiences that will empower
-            you
-            to reach new horizons. <br>
-            <br>
-
+            <div class="header">🔓 Sign Up Now and Unlock New Horizons 🌅<br>
+                Experience a world of possibilities and growth as you take the first step towards your awakening journey.<br>
+                Join us today to access exclusive content, expert guidance, and transformative experiences that will empower
+                you to reach new horizons. <br>
+                <br>
+            </div>
+            <div class="call">
+                Sign up now and let your journey begin! 🚀
+            </div>
+            <div class="form">
+                <form id="signup-form" action="process_registration.php" method="post">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                            <div class="error"></div>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error"></div>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                            <div class="error"></div>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="confirm_password">Confirm Password:</label>
+                            <input type="password" id="confirm_password" name="confirm_password" required>
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                
+                    <input type="submit" value="Register" class="submit-button">
+                </form>
+            </div>
         </div>
-        <div class="call">
-            Sign up now and let your journey begin! 🚀
-            </div>
-        <div class="form">
-            <div class="row">
-                <div class="form-group">
-                    <label for="first_name">First Name:</label>
-                    <input type="text" id="first_name" name="first_name" required>
-                </div>
-        
-                <div class="form-group">
-                    <label for="last_name">Last Name:</label>
-                    <input type="text" id="last_name" name="last_name" required>
-                </div>
-            </div>
-        
-            <div class="row">
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required> 
-                </div>
-        
-                <div class="form-group">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-            </div>
-        
-            <div class="row">
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-        
-                <div class="form-group">
-                    <label for="confirm_password">Confirm Password:</label>
-                    <input type="password" id="confirm_password" name="confirm_password" required>
-                </div>
-            </div>
-        
-            <input type="submit" value="Register">
-        </div>
-        
-            </div>
-        </div> <!-- Corrected div closing tag -->
     </div>
+
 
 </body>
 
