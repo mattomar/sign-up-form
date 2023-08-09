@@ -5,8 +5,9 @@ body{
 
 .container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
+
 
 .picture {
     flex: 1;
@@ -14,15 +15,16 @@ body{
     display: flex;
     align-items: stretch;
     /* Stretch to container height */
+    height: clamp(100vh, 80%, );
+    /* Takes 100vh height initially, and stops shrinking after 80% of container or 400px */
 }
+
 
 .picture img {
     object-fit: cover;
     /* Maintain aspect ratio and cover entire container */
-    min-width: 100%;
-    /* Ensure image takes up full width of .picture */
-    height: 100%;
-    /* Ensure image takes up full height of .picture */
+    width: 100%; /* Adjusted to width for responsiveness */
+    height: 100%; /* Ensure image takes up full height of .picture */
 }
 
 
@@ -30,7 +32,7 @@ body{
 .header {
     display: flex;
     flex-direction: row;
-    margin-top: 70px;
+    margin-top: 30px;
     font-weight: bold;
     color: #333;
     text-align: center;
